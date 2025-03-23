@@ -859,6 +859,9 @@ h5 {
       grid-template-rows: auto;
       padding: 20px;
    }
+   .boton_presupuesto{
+      font-size: 15px;
+   }
    .div_der div h6 , ol li h6{
       font-size: 40px;
       clip-path: circle(55px at 37px 30px);
@@ -876,6 +879,7 @@ h5 {
    .txt_izq{
       padding: 20px;
    }
+  
    .div_preg div p, footer{
       font-size: 18px;
    }
