@@ -921,7 +921,9 @@ h5 {
   #form_pres{
    width: 90%;
   }
-
+  .txt_fondo{
+   width: 80%;
+  }
   /*contacto*/
   .lista_contacto{
    width: 50%;
