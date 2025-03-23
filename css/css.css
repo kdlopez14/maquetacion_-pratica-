@@ -26,11 +26,6 @@ header{
 }
 main {
    grid-area: main; /* Asigna la zona 'main' al main */
-   width: 100%;
-   margin-top: 100px;
-}
-section{
-   width: 100%;
 }
 /*titulos*/
 h1 {
@@ -109,7 +104,6 @@ footer {
 
 /*Menú Principal*/
 .menu_principal {
-   position: relative;
    width: 100%;
    min-height: 100px; /* Añadir una altura mínima */
    display: flex;
@@ -127,10 +121,12 @@ footer {
 .camion {
    width: 35%;
    height: 100%;
+   object-fit: contain;
 }
 .logo {
    width: 65%;
    height: 100%;
+   object-fit: contain;
 }
 
 /*Lista de navegación*/
@@ -147,7 +143,6 @@ footer {
 }
 .menu {
    display: flex;
-   min-width: 120px;
    align-items: center;
    gap: 4px;
 }
@@ -157,7 +152,7 @@ footer {
    font-size: 20px;
 }
 .iconos_menu{
-  width: 15%;
+  width: 20%;
 }
 .menu-icon {
    display: none;
@@ -169,6 +164,11 @@ footer {
    border: none;
    color: rgb(5, 1, 1);
    cursor: pointer;
+}
+.indicador_pag{
+   width: 80%;
+   color: rgb(32, 32, 32);
+   font-size: 20px;
 }
 .enlace:hover, .indicador_pag{
    text-decoration: underline;
@@ -261,12 +261,10 @@ ol {
    box-shadow: 0px 0px 10px 6px rgb(190, 190, 190);
    cursor: pointer;
    border: none;
-}
-
-.boton_presupuesto a {
    color: #353535;
    font-size: 18px;
 }
+
 .boton_presupuesto:hover {
    width: 82%;
    padding: 11px 43px;
@@ -748,20 +746,7 @@ h5 {
 .txt_fondo p{
    color: black;
 }
-.button2{
-   margin-top: 40px;
-   width:35%;
-   height: 4.5vh;
-   font-size: 18px;
-   background-color: rgb(246, 246, 247, 0);
-   border: 0.5px solid black;
-}
-.button2 a{
-   color: black;
-}
-.button2:hover{
-   background-color: #ca6015;
-}
+
 /*seccion formulario*/
 
 #form_pres{
@@ -839,18 +824,19 @@ h5 {
    display: none;
   }
   .lista_nav.active{
-   display: flex;
-   flex-direction: column;
-  
+   display: grid;
+   grid-template-columns: 50%;
+   grid-template-rows: auto;
   }
   .menu-icon{
    display: block;
   }
-  
    /*Main*/
-   main{
-      margin-top: 0px;
+   .cont_img, .cont_tit, .eslogan2, .cont_s4 {
+      min-width: 100%; /* O elimina min-width */
+      width: 100%;
    }
+  
    .seccion1, .eslogan2, .cont_caracteristicas, .div_izq, .div_der
    , .redes_sociales, .gal_sec2, .contenido_din, .ubi{
       display: flex;
@@ -862,27 +848,24 @@ h5 {
       width: 100%;
    }
    .fto_cont,  .eslogan_foto{  /*Si no le pongo una altura no detecta la imagen */
-     min-height: 1000px;
+     min-height: 400px;
    }
    h1{
-      font-size: 90px;
+      font-size: 70px;
       margin-bottom: 50px;
    }
    .cont_caracteristicas ol{
       grid-template-columns: 100%;
       grid-template-rows: auto;
-      padding: 30px;
+      padding: 20px;
    }
    .div_der div h6 , ol li h6{
       font-size: 40px;
       clip-path: circle(55px at 37px 30px);
       background-color: transparent;
    }
-   .boton_presupuesto a{
-      font-size: 40px;
-   }
    .cont_s4{
-      grid-template-columns: 80%;
+      grid-template-columns: 60%;
       grid-template-rows: auto auto auto auto;
       justify-content: center;
    }  
@@ -957,8 +940,9 @@ h5 {
 }
 
 @media screen and (max-width: 1100px){
+   
+
    body{
-      width: 100%;
       font-size: 16px;
    }
    .seccion5{
