@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto_Nomadix</title>
+    <link rel="stylesheet" href="./css/css.css">
+    <meta name="description"
+        content="¡Obtén un presupuesto rápido y personalizado para tu mudanza con Nomadix. Servicios de mudanza seguros, eficientes y a precios competitivos. ¡Solicita tu presupuesto online sin compromiso!">
+</head>
+
+<body>
+    <header> <!--Cabecera-->
+        <div class="head">
+            <div class="before_nav">
+                <div class="box_texto">
+                    <p>Contacta con Mudanzas Nomadix</p>
+                    <div class="img_tel"><img class="tel"
+                            src="./assets/imagenes/b56dfabb-c759-4c91-bb49-9335d37e29b1.png" alt="contacto_icono"
+                            width="25px" height="25px"></div>
+                    <p> 697 435 675 </p>
+                </div>
+            </div>
+            <div class="menu_principal">
+                <div class="cont_imgs">
+                    <img class="camion" src="./assets/imagenes/camion.png" alt="camion" width="300px" height="150px">
+                    <img class="logo" src="./assets/imagenes/logo1.png" alt="logo" width="600px" height="150px">
+                </div>
+                <nav class="nav"> <!--Menú de navegación-->
+                    <ul class="lista_nav">
+                        <li class="menu">
+                            <a href="index.html" class="iconos_menu"><img class="wh_img"
+                                    src="./assets/imagenes/Home-Silhouette-PNG-Image.png" alt="icono_home" width="25px"
+                                    height="25px"></a>
+                            <a class="enlace" href="index.html">Home</a>
+                        </li>
+                        <li class="menu">
+                            <a href="Galeria.html" class="iconos_menu"><img class="wh_img" src="./assets/imagenes/galeria.png"
+                                    alt="icono_galería" width="25px" height="25px"></a>
+                            <a class="enlace" href="Galeria.html">Galería</a>
+                        </li>
+                        <li class="menu">
+                            <a href="presupuesto.html" class="iconos_menu"><img class="wh_img" 
+                                    src="./assets/imagenes/presupuesto (2).png" alt="icono_presupuesto" width="25px"
+                                    height="25px"></a>
+                            <a class="indicador_pag" href="presupuesto.html">Presupuesto</a>
+                        </li>
+                        <li class="menu">
+                            <a href="contacto.html" class="iconos_menu"><img class="wh_img"
+                                    src="./assets/imagenes/b56dfabb-c759-4c91-bb49-9335d37e29b1.png"
+                                    alt="icono_contacto" width="25px" height="25px"></a>
+                            <a class="enlace" href="contacto.html">Contacto</a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main> <!--Cuerpo de la página web-->
+        <section><!--Imagen de Fondo-->
+            <div class="fondo_pres"></div>
+            <div class="txt_fondo txt_centro">
+                <h2 class="tit">Tu Mudanza, Nuestro Compromiso</h2>
+                <hr>
+                <p>Confía en Nomadix para hacer de tu mudanza un proceso rápido, seguro y sin estrés.<br> ¡Rellena el
+                    formulario y deja el resto en nuestras manos!</p>
+                <button class="button2"><a href="#form_pres">¡Solicita tu Presupuesto!</a></button>
+            </div>
+        </section>
+        <section >
+            <h2 class="tit">¡Solicita tu Presupuesto!</h2>
+            <div id="form_pres">
+                <form>
+                    <h3>Información de Contacto</h3>
+                    <p>Nombre completo:</p>
+                    <input class="casilla" type="text" name="nombre" placeholder="Nombre" required>
+                    <p>Teléfono:</p>
+                    <input class="casilla" type="tel" name="teléfono" placeholder="Teléfono" required>
+                    <p>Correo electrónico</p>
+                    <input class="casilla" type="email" name="correo" placeholder="Correo" required>
+
+                    <h3>Detalles de la Mudanza</h3>
+                    <p>Fecha prevista para la mudanza</p>
+                    <input class="casilla" type="date" name="fecha" required>
+                    <p>Direción completa de origen</p>
+                    <input class="casilla" type="text" name="Dirección" placeholder="Dirección origen" required>
+                    <p>Dirección completa de destino</p>
+                    <input class="casilla" type="text" name="Dirección" placeholder="Dirección destino" required>
+
+                    <h3>Características de las Ubicaciones</h3>
+                    <p>Tipo de vivienda origen:</p>
+                    <input class="radio" type="radio" name="opcion" value="Casa"><span>Casa</span>
+                    <input class="radio" type="radio" name="opcion" value="Apartamento"><span>Apartamento</span>
+                    <input class="radio" type="radio" name="opcion" value="Oficina"><span>Oficina</span>
+                    <input class="radio" type="radio" name="opcion" value="Local"><span>Local</span>
+
+                    <p>Tipo de vivienda destino:</p>
+                    <input class="radio" type="radio" name="opcion" value="Casa"><span>Casa</span>
+                    <input class="radio" type="radio" name="opcion" value="Apartamento"><span>Apartamento</span>
+                    <input class="radio" type="radio" name="opcion" value="Oficina"><span>Oficina</span>
+                    <input class="radio" type="radio" name="opcion" value="Local"><span>Local</span>
+
+                    <p>Planta: </p>
+                    <input class="casilla" type="number" name="planta" placeholder="planta" required>
+                    <p>Ascensor: </p>
+                    <input class="radio" type="radio" name="ascensor" value="si"><span>Sí</span>
+                    <input class="radio" type="radio" name="ascensor" value="no"><span>No</span>
+
+                    <h3>Inventario de Bienes a Trasladar:</h3>
+                    <p>Listado de muebles y electrodomésticos principales:</p>
+                    <textarea  cols="52" rows="8" name="muebles" placeholder="sofás, camas, refrigeradores, etc."
+                        required></textarea>
+                    <p>Artículos especiales: </p>
+                    <textarea  cols="50" rows="5" name="Artículos especiales"
+                        placeholder="pianos, obras de arte, elementos de gran tamaño, etc."></textarea>
+
+                    <h3>Servicios Adicionales Requeridos:</h3>
+                    <p>Empaque y desempaque:</p>
+                    <input class="radio" type="radio" name="empaque" value="si"><span>Sí</span>
+                    <input class="radio" type="radio" name="empaque" value="no"><span>No</span>
+                    <p>Desmontaje y montaje de muebles:</p>
+                    <input class="radio" type="radio" name="Desmontaje" value="si"><span>Sí</span>
+                    <input class="radio" type="radio" name="Desmontaje" value="no"><span>No</span>
+                    <p>Almacenaje temporal: </p>
+                    <input class="radio" type="radio" name="Almacenaje" value="si"><span>Sí</span>
+                    <input class="radio" type="radio" name="Almacenaje" value="no"><span>No</span>
+
+                    <h3>Observaciones o Requerimientos Especiales:</h3>
+                    <textarea cols="50" rows="8" name="observaciones" placeholder="">Observaciones</textarea>
+
+                    <input class="send" type="submit" name="boton" value="Enviar">
+            </div>
+            </form>
+        </section>
+        <section><!--Seccion 7-->
+            <div class="seccion7 txt_centro">
+                <div class="fondo_info"></div>
+                <div class="contacto border20"><!--Contactar-->
+                    <h2>¿Necesitas Ayuda?</h2>
+                    <p>Llámanos gratis de lunes a viernes de 9h a 20h.<br> 
+                    900 546 500 <br>
+                    O si lo prefieres te llamamos nosotros ahora</p>
+                    <form>
+                        <input type="tel" name="telefono" placeholder="Número de teléfono" class="box_tel border20" required>
+                        <input type="submit" name="boton" value="enviar" class="boton_env_tel border20">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> <!--Pie de página-->
+        <div class="ciudades txt_centro">
+            <div>
+                <h5>Mudanzas Nomadix</h5>
+                <p>Mudanzas Valencia, Servios de mudanzas, Emabalaje, Transporte, Seguridad, Trabajos
+                    internacionales, Trabajos nacionales, Servicios personalizados</p>
+                <h5>OFRECEMOS SERVICIOS DE MUDANZAS EN ESPAÑA</h5>
+                <p>A coruña &#124; Albacete &#124; Alicante &#124; Almería &#124; Ávila &#124; Badajoz &#124; Barcelona
+                    &#124; Bilbao &#124; Burgos &#124; Cáceres &#124; Cádiz &#124;
+                    Castellón de la Plana &#124; Ceuta &#124; Ciudad Real &#124; Córdoba &#124; Cuenca &#124;
+                    Donostia-San Sebastián &#124; Girona &#124; Granada &#124; Guadalajara &#124;
+                    Huelva &#124; Huesca &#124; Jaén &#124; Jerez de la Frontera &#124; Gran Canaria &#124; León &#124;
+                    Lleida &#124; Logroño &#124; Lugo &#124; Madrid &#124; Málaga &#124;
+                    Melilla &#124; Murcia &#124; Ourense &#124; Oviedo &#124; Palma de Mollorca &#124; Pamplona &#124;
+                    Salamanca &#124; Tenerife &#124; Santander &#124; Valencia </p>
+            </div>
+        </div>
+
+        <div class="redes_sociales">
+            <div>
+                <ul class="documentacion"> <!--Documentación legal de la empresa-->
+                    <li><a href="documentacion.html#aviso_legal">Aviso Legal</a></li>
+                    <li><a href="documentacion.html#cond.generales">Condiciones generales de contratación</a></li>
+                    <li><a href="documentacion.html#pol.priv">Política de privacidad</a></li>
+                    <li><a href="documentacion.html#pol.cookies">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="iconos_redes"> <!--Enlaces que dirigen a las redes sociales de la empresa-->
+                    <li><a href="https://es-es.facebook.com/"><img class="icon_redes" src="./assets/imagenes/facebook.png" alt="facebook"
+                                width="60"></a></li>
+                    <li><a href="https://www.instagram.com/"><img class="icon_redes" src="./assets/imagenes/instagram.png" alt="Instagram"
+                                width="60"></a></li>
+                    <li><a href="https://es.linkedin.com/"><img class="icon_redes" src="./assets/imagenes/linkedin.png" alt="Linkedin"
+                                width="60"></a></li>
+                    <li><a href="https://www.youtube.com/"><img class="icon_redes" src="./assets/imagenes/youtube.png" alt="Youtube"
+                                width="60"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+/*Los bloques de CSS por defecto siempre llevan algo de margen y de padding. 
+Para asegurarnos de que no se nos deformen los bloques eliminamos todos los margenes
+y paddings después se le añadirá, si es necesario.*/
+/*---Estilos Generales---*/
+* {
+   margin: 0;
+   padding: 0;
+   /*Le indicamos que no redimensione los bloques, que no supere su anchura y altura
+      aunque le añadamos margenes o paddings. Siempre que esten dentro del tamaño definido del bloque*/
+   box-sizing: border-box;
+}
+body {
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+   min-height: 100vh;
+   /*Tipos de fuente para toda la página*/
+   font-family: "sans-serif", Arial, Helvetica;
+   /*Le indicamos que en toda la web muestre el cursor por defecto.
+      A menos que le indiquemos lo contrario en determinadas zonas*/
+   cursor: default;
+}
+
+a{
+   text-decoration: none;
+}
+/*---Estilos de Títulos---*/
+h1 {
+   /*Eslogan1*/
+   font-size: 90px;
+   font-weight: 200;
+   background: linear-gradient(to right, #ca6015, #f1b254);
+   filter: drop-shadow(2px 2px 4px rgba(29, 29, 29, 0.5));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   text-align: center;
+}
+h2 {
+   /*Ttitulos de secciones*/
+   font-size: 30px;
+   color: rgb(82, 81, 81);
+   text-align: center;
+   margin-bottom: 20px;
+}
+h3 {
+   /*Titulos de los articulos*/
+   color: rgb(82, 81, 81);
+   text-align: center;
+   margin: 10px 0px;
+}
+h4 {
+   /*Las Preguntas de la seccion Preguntas Frecuentes*/
+   font-size: 20px;
+   color: rgb(82, 81, 81);
+   margin-bottom: 10px;
+}
+h5 {
+   /*Títulos footer */
+   font-size: 25px;
+   font-weight: 100;
+   margin: 20px 0px 10px;
+}
+/*---Cabecera---*/
+header {
+   width: 100%;
+   min-height: 100vh;
+   position: fixed;
+   z-index: 6;
+}
+/*contacta con nosotros*/
+.before_header {
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   background-color: rgb(70, 67, 67);
+}
+.tel {
+   width: 20px;
+   height: 20px;
+}
+.before_header p {
+   margin-right: 40px;
+   margin-left: 15px;
+   color: white;
+}
+/*div Logo + Menú Nav*/
+.menu_principal {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0px 10px;
+   background-color: #fc9147;
+}
+.camion {
+   width: 130px;
+   height: 100%;
+}
+.camion img {
+   width: 100%;
+   height: 100%;
+}
+.logo {
+   /*Tamaño del logo*/
+   width: 12%;
+   height: 65%;
+   margin-right: 450px;
+}
+.logo img {
+   width: 100%;
+   height: 100%;
+}
+/*Menú Navegación*/
+.nav {
+   display: flex;
+   align-items: center;
+   width: 40%;
+   height: 100%;
+}
+.lista_nav {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 80%;
+   list-style: none;
+}
+/*Estilo Menú de Navegación*/
+.menu {
+   display: flex;
+   width: 150px;
+   height: 50%;
+   padding: 5px 5px;
+}
+.enlace {
+   width: 15%;
+   margin-left: 6px;
+   font-size: 23px;
+   font-family:'Pronomar';
+   color:rgb(44, 44, 44);
+} 
+.iconos_menu{
+   width: 18px;
+   height: 18px;
+}
+.iconos_menu img {
+   width: 100%;
+   height: 100%;
+}/*cambiamos el estilo cuando el ratón este encima del Menú de Navegación*/
+.menu a:hover {
+   color: black;
+   text-decoration: underline;
+}
+/*---Main---*/
+section{
+   width: 100%;
+   height: 100vh; /*Para que ocupe smp el 100 de la pantalla y no se desborde el contenido*/
+}
+/*Seccion 1*/
+.seccion1 {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   /*animación*/
+   animation: move .7s ease;
+   background: #ca6015;
+}
+@keyframes move{
+   0%{
+      opacity: 0;
+      transform: translateY(70px);
+   }
+   100%{
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+.camion1 {
+   height: 500px;
+   margin: 0px 100px;
+}
+.titulo{
+   width: 100%;
+   text-align: center;
+}
+/*Seccion 2*/
+.seccion2{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: beige;
+}
+.seccion2 article {
+   display: flex;
+   width: 60%;
+   max-width: 1000px;
+   border-radius: 20px;
+   background-color: rgb(228, 226, 226);
+}
+.div1 {
+   width: 50%;
+   height: 100%;
+   padding: 40px 40px;
+   font-size: 20px;
+   text-align: center;
+}
+.div1 p {
+   margin-bottom: 20px;
+   width: 100%;
+   height: 70%;
+}
+
+.boton_presupuesto {
+   width: 80%;
+   margin: 0 auto;
+   padding: 10px 42px;
+   background-color: #fc9147;
+   border-radius: 20px;
+   box-shadow: 0px 0px 10px 6px rgb(190, 190, 190);
+   cursor: pointer;
+}
+.boton_presupuesto:hover {
+   width: 82%;
+   padding: 11px 43px;
+}
+.boton_presupuesto a {
+   color: white;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 18px;
+   text-align: center;
+}
+
+.div2{
+   width: 50%;
+   background: url('../assets/imagenes/trabajador.png') center/cover ;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+
+/*Seccion 3 */
+.seccion3 {
+   padding:20px 325px;
+   background-color: white;
+   font-size: 21px;
+}
+.seccion3 article {
+   max-width: 80%;
+   margin:0 auto;
+   display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+   gap: 30px;
+}
+.seccion3 article div {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+}
+
+.seccion3 article div img {
+   width: 200px;
+   height: 200px;
+}
+
+/*Seccion 4*/
+.seccion4 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 25%;
+}
+
+.seccion4 article {
+   width: 60%;
+
+   margin: 5px;
+   padding: 20px;
+   align-content: center;
+   border-radius: 10px 30px;
+   background-color: rgb(228, 226, 226);
+}
+
+/*Seccion 5 "Ayuda"*/
+.seccion5 {
+   display: flex;
+   background-color: #fc9147;
+}
+.seccion5 div {
+   width: 50%;
+   height: 100%;
+}
+.seccion5 div img{
+   width: 100%;
+   height: 100%;
+}
+.seccion5 article {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 150px;
+   font-size: 30px;
+}
+.box_tel {
+   width: 60%;
+   height: 40px;
+   margin-top: 50px;
+   padding: 15px;
+   font-size: 15px;
+   border-radius: 10px;
+}
+.boton_env_tel {
+   width: 25%;
+   height: 35px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+/*Footer*/
+footer {
+   background-color: rgb(70, 67, 67);
+   color: rgb(202, 201, 201);
+}
+.ciudades {
+   align-content: center;
+   text-align: center;
+   padding: 30px 150px;
+   border-bottom: 1px solid;
+}
+.ciudades p{
+ color: rgb(202, 201, 201);
+}
+/*Lista de la documentación oficial de la página*/
+.documentacion li {
+   margin: 0px 20px;
+   text-decoration: underline;
+}
+.documentacion li a {
+   color: rgb(202, 201, 201);
+}
+/*Lista de iconos de redes sociales*/
+.redes_sociales {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 60px;
+   padding: 0px 30px;
+}
+.redes_sociales div ul {
+   display: flex;
+}
+.icon_redes {
+   width: 27px;
+   height: 27px;
+}
+.iconos_redes li {
+   margin: 0px 20px;
+   list-style: none;
+}
+
+
+
+/*------------Galería------------*/
+.indicador_pag{
+   width: 15%;
+   margin-left: 6px;
+   font-size: 23px;
+   font-family:'Pronomar';
+   text-decoration: underline;
+   color: black;
+}
+
