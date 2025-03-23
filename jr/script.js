@@ -51,14 +51,7 @@
             button.classList.add("active");
         });
     });
-    /*document.getElementById('menu-toggle').addEventListener('click', function() {
-        var menu = document.getElementById('menu');
-        if (menu.style.display === 'block') {
-            menu.style.display = 'none';
-        } else {
-            menu.style.display = 'block';
-        }
-    });*/
+ 
     document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('menu-icon').addEventListener('click', function() {
             const navList = document.querySelector('.lista_nav');

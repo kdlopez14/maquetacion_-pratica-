@@ -105,7 +105,7 @@ footer {
 /*Menú Principal*/
 .menu_principal {
    width: 100%;
-   min-height: 100px; /* Añadir una altura mínima */
+   min-height: 100px; 
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -155,10 +155,10 @@ footer {
   width: 20%;
 }
 .menu-icon {
-   display: none;
+   display: none; /* Oculto por defecto */
    position: absolute;
    top: 10px;
-   left: 25px; /* Oculto por defecto */
+   left: 25px; 
    font-size: 50px;
    background: none;
    border: none;
@@ -241,7 +241,7 @@ ol {
    width: 70%;
    min-width: 900px;
    display: flex;
-   margin: 0px auto;    /*centrado 1*/
+   margin: 0px auto;   
    padding: 20px;
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
@@ -255,7 +255,7 @@ ol {
 /*Botón Presupuesto*/
 .boton_presupuesto {
    width: 80%;
-   margin: 0 auto;            /*centrado 2*/
+   margin: 0 auto;            
    padding: 10px 42px;
    background-color: #fc9147;  
    box-shadow: 0px 0px 10px 6px rgb(190, 190, 190);
@@ -737,7 +737,7 @@ h5 {
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%); /* Ajuste fino para centrar bien */
+   transform: translate(-50%, -50%); /* Ajuste para centrar bien */
 }
 .txt_fondo hr{
    position: relative;
@@ -833,7 +833,7 @@ h5 {
   }
    /*Main*/
    .cont_img, .cont_tit, .eslogan2, .cont_s4 {
-      min-width: 100%; /* O elimina min-width */
+      min-width: 100%;
       width: 100%;
    }
   
@@ -847,7 +847,7 @@ h5 {
    , .contacto, .fto_menu, .txt, .ubi div{
       width: 100%;
    }
-   .fto_cont,  .eslogan_foto{  /*Si no le pongo una altura no detecta la imagen */
+   .fto_cont,  .eslogan_foto{ 
      min-height: 400px;
    }
    h1{
